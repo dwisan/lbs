@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+   dbstd:
+     image: registry.mcs.psu.ac.th/lbls:mysql
+     restart: always
+     network_mode: host
+     volumes:
+       - /root/dbstd.conf:/etc/nginx/nginx.conf
